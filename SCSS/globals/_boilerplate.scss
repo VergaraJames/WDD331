@@ -1,0 +1,21 @@
+// u from util to call fonts or we can use * to eliminate u.$font and use only $font
+@use '../util' as u;
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    // u from carpet util 
+    font-family: u.$font;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
